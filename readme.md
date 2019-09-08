@@ -1,39 +1,14 @@
-## Messenger App using Laravel and Vue.JS
 
-[Youtube Tutorial link](https://www.youtube.com/watch?v=5sXmfwnxfjA&list=PLJpBh2VJhy5x2GKfkfIcn0r6P6uLat7xR)
 
-#### [@WeCodeTutorials](https://twitter.com/WeCodeTutorials)
-[![Logo](https://cdn.pbrd.co/images/HdwCut8.png)](https://www.youtube.com/channel/UCj9VatwdukZjNOnIKcpWcsA)
+# После загрузки проекта переходим в его директорию
+cd \test
 
-This project is made for my youtube tutorial on "Messenger App with Laravel, Vue.JS & Laravel Echo".
-
-![App Example](https://media.giphy.com/media/8cARsYOk9DmCLZTZOb/giphy.gif)
-
-## get it up and running.
-
-After you clone this project, do the following:
-
-```bash
-# go into the project
-cd Messenger-App-VueJS-and-Laravel
-
-# create a .env file
-cp .env.example .env
-
-# install composer dependencies
-composer update
-
-# install npm dependencies
+# Устанавливаем пакеты npm 
 npm install
 
-# generate a key for your application
-php artisan key:generate
+# Проводим миграции
+php artisan migrate
 
-# create a local MySQL database (make sure you have MySQL up and running)
-mysql -u root
-
-> create database chat_db;
-> exit;
 
 # add the database connection config to your .env file
 DB_CONNECTION=mysql
