@@ -1,6 +1,11 @@
 
+# Устанавливаем composer 
+https://getcomposer.org/
 
-# После загрузки проекта переходим в его директорию
+# Устанавливаем Laravel с помощью командной строки
+composer global require "laravel/installer"
+
+# Загружаем проект и переходим в его директорию
 cd \test
 
 # Устанавливаем пакеты npm 
