@@ -11,6 +11,14 @@ cd \test
 # Устанавливаем пакеты npm 
 npm install
 
+# Настройка env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=chat
+DB_USERNAME=homestead (на усмотрение вашей бд)
+DB_PASSWORD=secret
+
 # Проводим миграции
 php artisan migrate
 
